@@ -13,6 +13,7 @@ int main (void){
 int majority (int input1, int input2[]){
 
 	int i, j, k, count = 0; 
+	int none = -1;
 	for(i = 0; i < input1; i++){
 		count = 0;
 		k = input2[i];
@@ -24,7 +25,7 @@ int majority (int input1, int input2[]){
 		if(count >= (input1/2))
 			printf("%d\n",k);
 		else
-			printf("-1\n");	
+			printf("%d\n",-1);	
 	}
 	return 0;
 }
