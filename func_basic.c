@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+// example input1: 3 input2{1,2,1} output 1
 
 int majority (int input1, int input2[]);
 
@@ -23,9 +24,9 @@ int majority (int input1, int input2[]){
 			}
 	        }
 		if(count >= (input1/2))
-			printf("%d\n",k);
+			return k;
 		else
-			printf("%d\n",-1);	
+			k = -1;	
 	}
-	return 0;
+	return k;
 }
